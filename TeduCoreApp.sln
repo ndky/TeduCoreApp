@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp", "TeduCoreApp\TeduCoreApp.csproj", "{7677DCDF-24C7-4A8D-92D6-5D565CBBEEDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeduCoreApp", "TeduCoreApp\TeduCoreApp.csproj", "{7677DCDF-24C7-4A8D-92D6-5D565CBBEEDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp.Infrastructure", "TeduCoreApp.Infrastructure\TeduCoreApp.Infrastructure.csproj", "{E017D7CF-C8BD-48EA-B85E-433217F61FF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp.Ultilities", "TeduCoreApp.Ultilities\TeduCoreApp.Ultilities.csproj", "{1F43C045-C6DC-4439-921B-096CD95DD17F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp.Data", "TeduCoreApp.Data\TeduCoreApp.Data.csproj", "{28EA468D-D86B-4DC2-8DC4-6A7A9CEFAE4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp.Data.EF", "TeduCoreApp.Data.EF\TeduCoreApp.Data.EF.csproj", "{64FCCE82-E66D-403A-9E37-A65FCAA213A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp.Application", "TeduCoreApp.Application\TeduCoreApp.Application.csproj", "{144070EB-DDEB-47AC-927E-561B62CB1947}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{213A0329-E556-4316-B91F-301899495A97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{2863B954-EB3B-4F8E-B9FC-D2D80973EDD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{ECFE1766-1E70-48F7-9C07-8FF9DF89351C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{3CF04AFC-9597-4764-9AB3-7FB297A3AACA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +33,37 @@ Global
 		{7677DCDF-24C7-4A8D-92D6-5D565CBBEEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7677DCDF-24C7-4A8D-92D6-5D565CBBEEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7677DCDF-24C7-4A8D-92D6-5D565CBBEEDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E017D7CF-C8BD-48EA-B85E-433217F61FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E017D7CF-C8BD-48EA-B85E-433217F61FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E017D7CF-C8BD-48EA-B85E-433217F61FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E017D7CF-C8BD-48EA-B85E-433217F61FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F43C045-C6DC-4439-921B-096CD95DD17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F43C045-C6DC-4439-921B-096CD95DD17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F43C045-C6DC-4439-921B-096CD95DD17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F43C045-C6DC-4439-921B-096CD95DD17F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28EA468D-D86B-4DC2-8DC4-6A7A9CEFAE4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28EA468D-D86B-4DC2-8DC4-6A7A9CEFAE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28EA468D-D86B-4DC2-8DC4-6A7A9CEFAE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28EA468D-D86B-4DC2-8DC4-6A7A9CEFAE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64FCCE82-E66D-403A-9E37-A65FCAA213A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64FCCE82-E66D-403A-9E37-A65FCAA213A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64FCCE82-E66D-403A-9E37-A65FCAA213A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64FCCE82-E66D-403A-9E37-A65FCAA213A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144070EB-DDEB-47AC-927E-561B62CB1947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144070EB-DDEB-47AC-927E-561B62CB1947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144070EB-DDEB-47AC-927E-561B62CB1947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144070EB-DDEB-47AC-927E-561B62CB1947}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7677DCDF-24C7-4A8D-92D6-5D565CBBEEDB} = {213A0329-E556-4316-B91F-301899495A97}
+		{E017D7CF-C8BD-48EA-B85E-433217F61FF1} = {3CF04AFC-9597-4764-9AB3-7FB297A3AACA}
+		{1F43C045-C6DC-4439-921B-096CD95DD17F} = {3CF04AFC-9597-4764-9AB3-7FB297A3AACA}
+		{28EA468D-D86B-4DC2-8DC4-6A7A9CEFAE4A} = {ECFE1766-1E70-48F7-9C07-8FF9DF89351C}
+		{64FCCE82-E66D-403A-9E37-A65FCAA213A3} = {ECFE1766-1E70-48F7-9C07-8FF9DF89351C}
+		{144070EB-DDEB-47AC-927E-561B62CB1947} = {2863B954-EB3B-4F8E-B9FC-D2D80973EDD7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A1D176A-F558-45C8-8F8C-F4C5AEBFC1E6}
