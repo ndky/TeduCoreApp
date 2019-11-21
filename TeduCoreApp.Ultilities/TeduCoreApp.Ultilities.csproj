@@ -5,9 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Constants\" />
     <Folder Include="Dtos\" />
     <Folder Include="Helpers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
