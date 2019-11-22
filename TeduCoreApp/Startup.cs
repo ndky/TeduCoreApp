@@ -14,6 +14,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TeduCoreApp.Data.EF;
 using TeduCoreApp.Data.Entities;
+using AutoMapper;
+using TeduCoreApp.Data.IRepository;
+using TeduCoreApp.Data.EF.Repositories;
+using TeduCoreApp.Application.Interfaces;
+using TeduCoreApp.Application.Implementation;
 
 namespace TeduCoreApp
 {
@@ -41,10 +46,17 @@ namespace TeduCoreApp
                     Configuration.GetConnectionString("DefaultConnection"), opt=>opt.MigrationsAssembly("TeduCoreApp.Data.EF")));
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<AppDbContext>();
-            services.AddTransient<DbInitializer>();
+            
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
 
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
+
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
+
+            services.AddTransient<DbInitializer>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
