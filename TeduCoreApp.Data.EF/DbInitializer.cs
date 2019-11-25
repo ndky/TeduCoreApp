@@ -13,14 +13,15 @@ namespace TeduCoreApp.Data.EF
     public class DbInitializer
     {
         private readonly AppDbContext _context;
-        private readonly UserManager<AppUser> _userManager;
-        private readonly RoleManager<AppRole> _roleManager;
+        private UserManager<AppUser> _userManager;
+        private RoleManager<AppRole> _roleManager;
         public DbInitializer(AppDbContext context, UserManager<AppUser> userManager, RoleManager<AppRole> roleManager)
         {
             _context = context;
             _userManager = userManager;
             _roleManager = roleManager;
         }
+
         public async Task Seed()
         {
             if (!_roleManager.Roles.Any())
@@ -52,6 +53,9 @@ namespace TeduCoreApp.Data.EF
                     FullName = "Administrator",
                     Email = "admin@gmail.com",
                     Balance = 0,
+                    DateCreated = DateTime.Now,
+                    DateModified = DateTime.Now,
+                    Status = Status.Active
                 }, "123654$");
                 var user = await _userManager.FindByNameAsync("admin");
                 await _userManager.AddToRoleAsync(user, "Admin");
