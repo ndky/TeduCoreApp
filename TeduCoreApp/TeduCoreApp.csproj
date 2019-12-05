@@ -21,4 +21,15 @@
     <ProjectReference Include="..\TeduCoreApp.Ultilities\TeduCoreApp.Ultilities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\font-awesome\" />
+    <Folder Include="wwwroot\lib\bootstrap-daterangepicker\" />
+    <Folder Include="wwwroot\lib\fastclick\" />
+    <Folder Include="wwwroot\lib\chart\" />
+    <Folder Include="wwwroot\lib\datejs\" />
+    <Folder Include="wwwroot\lib\moment\" />
+    <Folder Include="wwwroot\lib\sparkline\" />
+    <Folder Include="wwwroot\lib\nprogress\" />
+  </ItemGroup>
+
 </Project>
