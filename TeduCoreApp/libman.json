@@ -47,8 +47,16 @@
       "destination": "wwwroot/lib/datejs/"
     },
     {
-      "library": "moment.js@2.24.0", 
+      "library": "moment.js@2.24.0",
       "destination": "wwwroot/lib/moment/"
+    },
+    {
+      "library": "notify@0.4.2",
+      "destination": "wwwroot/lib/notifyjs/"
+    },
+    {
+      "library": "bootbox.js@5.3.2",
+      "destination": "wwwroot/lib/bootbox/"
     }
   ]
 }
